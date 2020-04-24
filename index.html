@@ -1,0 +1,585 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Bredh flat responsive HTML & WHMCS hosting and domains template">
+    <meta name="author" content="Marvinli">
+<!--    <link rel="icon" href="favicon.ico"> 开发阶段暂无需写入路径-->
+    <title>[site[title]]-[site[subtitle]]</title><!-- 函数参见doc -->
+
+    <!-- Bootstrap 核心 CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- 主要 css 文件 -->
+    <link href="css/main.min.css" rel="stylesheet">
+
+</head>
+
+<!-- 主体部分开始 -->
+ <body>
+<!-- 加载动画 -->
+<div class="preloader">
+    <div class="preloader-container">
+        <svg version="1.1" id="L5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 0 0" xml:space="preserve">
+                <circle fill="#675cda" stroke="none" cx="6" cy="50" r="6">
+                    <animateTransform attributeName="transform" dur="1s" type="translate" values="0 15 ; 0 -15; 0 15" repeatCount="indefinite" begin="0.1" />
+                </circle>
+            <circle fill="#675cda" stroke="none" cx="30" cy="50" r="6">
+                    <animateTransform attributeName="transform" dur="1s" type="translate" values="0 10 ; 0 -10; 0 10" repeatCount="indefinite" begin="0.2" />
+                </circle>
+            <circle fill="#675cda" stroke="none" cx="54" cy="50" r="6">
+                    <animateTransform attributeName="transform" dur="1s" type="translate" values="0 5 ; 0 -5; 0 5" repeatCount="indefinite" begin="0.3" />
+                </circle>
+            </svg>
+        <span>Loading</span>
+    </div>
+</div>
+<!-- 加载动画结束 -->
+
+<div id="coodiv-header" class="d-flex mx-auto flex-column moon-edition"><!-- start header -->
+    <div class="bg_overlay_header">
+        <div class="video-bg-nuhost-header">
+            <div id="video_cover"></div>
+            <video autoplay muted loop>
+                <source src="media/coodiv-vid.mp4" type="video/mp4">
+            </video>
+            <span class="video-bg-nuhost-header-bg"></span>
+        </div>
+
+        <div id="particles-bg"></div>
+        <img src="img/header/h_bg_02.svg" alt="img-bg">
+        <span class="header-shapes shape-01"></span>
+        <span class="header-shapes shape-02"></span>
+        <span class="header-shapes shape-03"></span>
+    </div>
+    <!-- Fixed navbar -->
+    <nav id="coodiv-navbar-header" class="navbar navbar-expand-md fixed-header-layout">
+        <div class="container main-header-coodiv-s">
+            <a class="navbar-brand" href="index.html">
+                <img class="w-logo" src="img/header/logo-w.png" alt="" />
+                <img class="b-logo" src="img/header/logo.png" alt="" />
+            </a>
+            <button class="navbar-toggle offcanvas-toggle menu-btn-span-bar ml-auto" data-toggle="offcanvas" data-target="#offcanvas-menu-home">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="collapse navbar-collapse navbar-offcanvas" id="offcanvas-menu-home">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link" href="index.html">主页</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="price.html">最新活动<span class="nav-new-tag">HOT</span></a>
+                    </li>
+
+                    <li class="nav-item megamenu dropdown">
+                        <a class="nav-link" href="#" role="button" id="services-megamenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">产品 <span class="megamenu-toggle"></span></a>
+                        <div class="dropdown-menu coodiv-dropdown-megamnu default-megamenu" aria-labelledby="services-megamenu">
+                            <div class="d-flex justify-content-center bd-highlight mb-3 megamenu-items-header">
+                                <div class="p-2 bd-highlight">
+                                    <a href="vps.html">
+                                        <i class="bredhicon-sun"></i>
+                                        <h5>云服务器</h5>
+                                        <p>采用纯SSD架构硬件设备，只需几分钟，便可轻松云端获取和启用，实现您的计算需求。优质低廉的价格，为您节约计算成本，简化IT运维工作，让您更专注于核心业务的创新.</p>
+                                    </a>
+                                </div>
+
+                                <div class="p-2 bd-highlight">
+                                    <a href="host.html">
+                                        <i class="bredhicon-award-empty"></i>
+                                        <h5>虚拟主机</h5>
+                                        <p>架设于纯SSD架构的高性能云服务器之上，具有高在线率、高安全性、高稳定性等多项优势。核心骨干网络，能有效保证高品质网络环境和充足的带宽资源，适用于对网站运行有高要求的用户.</p>
+                                    </a>
+                                </div>
+
+                                <div class="p-2 bd-highlight">
+                                    <a href="computer.html">
+                                        <i class="bredhicon-steering-wheel"></i>
+                                        <h5>云电脑</h5>
+                                        <p>世界顶级KVM虚拟化技术，采用服务器级高端处理器，为您提供强大动力，高速直连线路，无论天南地北，延迟均极低高速直连线路，无论天南地北，延迟均极低</p>
+                                    </a>
+                                </div>
+
+                                <div class="p-2 bd-highlight">
+                                    <a href="sql.html">
+                                        <i class="bredhicon-headphones"></i>
+                                        <h5>云数据库</h5>
+                                        <p>基于云计算内核优势，针对高并发场景进行优化，免去90%运维烦恼，多重安全防护措施，专业的数据库备份、恢复及优化，专注于应用开发和业务发展</p>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" role="button" id="webhosting-megamenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">云服务器 </a>
+                        <div class="dropdown-menu coodiv-dropdown-header web-menu" aria-labelledby="webhosting-megamenu">
+                            <ul class="web-hosting-menu-header">
+                                <li><i class="fas fa-cloud"></i> <a href="hk.html">香港CN2 <span>CN2直连，20GB集群防御，BGP高防线路清洗</span></a></li>
+                                <li><i class="fas fa-cloud"></i> <a href="us.html">美国圣何塞高防 <span>国内延迟稳定160ms左右，峰值防御100GB集群</span></a></li>
+                                <li><i class="fas fa-cloud"></i> <a href="uscn2.html">美国CN2 <span>CN2优质线路，超低延迟，自带10GB攻击防护</span></a></li>
+                                <li><i class="fas fa-cloud"></i> <a href="sd.html">山东高防 <span>国内优质超高带宽，100GB独立防御峰值</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" role="button" id="webhosting-megamenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">虚拟主机 </a>
+                        <div class="dropdown-menu coodiv-dropdown-header web-menu" aria-labelledby="webhosting-megamenu">
+                            <ul class="web-hosting-menu-header">
+                                <li><i class="fas fa-server"></i> <a href="hkhost.html">香港CN2 <span>PCCW优质线路，延迟媲美国内，无防御</span></a></li>
+                                <li><i class="fas fa-server"></i> <a href="jphost.html">日本 <span>Microsoft大版机房，微量防御，日本优质线路</span></a></li>
+                                <li><i class="fas fa-server"></i> <a href="lnhost.html">辽宁高防 <span>独享带宽，20GB独立防御，需过白名单</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" role="button" id="webhosting-megamenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">云电脑 </a>
+                        <div class="dropdown-menu coodiv-dropdown-header web-menu" aria-labelledby="webhosting-megamenu">
+                            <ul class="web-hosting-menu-header">
+                                <li><i class="fas fa-desktop"></i> <a href="hosting.html">南京 <span>独享超高带宽，真实配置不超售</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" role="button" id="webhosting-megamenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">云数据库 </a>
+                        <div class="dropdown-menu coodiv-dropdown-header web-menu" aria-labelledby="webhosting-megamenu">
+                            <ul class="web-hosting-menu-header">
+                                <li><i class="fas fa-database"></i> <a href="mysql.html">Mysql <span>即将上线......</span></a></li>
+                                <li><i class="fas fa-database"></i> <a href="mssql.html">Mssql <span>即将上线......</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button" id="header-help-drop-down" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">帮助<span class="sr-only">(current)</span></a>
+                        <ul class="dropdown-menu coodiv-dropdown-header" aria-labelledby="header-help-drop-down">
+                            <li><a class="dropdown-item" href="./help">工单服务</a></li>
+                            <li><a class="dropdown-item" href="knowledgebase.html">常见问题</a></li>
+                        </ul>
+                    </li>
+
+<!--                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact us</a>
+                    </li>-->
+                </ul>
+            </div>
+            <ul class="header-user-info-coodiv">
+                <li class="dropdown"><a role="button" id="header-login-dropdown" href="/user">用户中心</a>
+                    <!-- user header dropdown -->
+
+                    <!-- end user header dropdown -->
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="mt-auto header-top-height"></div>
+    <main class="container mb-auto">
+        <div class="carousel carousel-main">
+            <div class="carousel-cell">
+                <h3 class="mt-3 main-header-text-title"><span>香港云CN2大陆直连月付仅需9.9元</span>五一特别活动</h3>
+                <div class="button-row text-center">
+                    <a class="side-text-right-button" href="price.html">了解详情</a>
+                </div>
+            </div>
+        </div>
+</div>
+</main>
+<div class="mt-auto"></div>
+</div><!-- end header -->
+
+<section>
+    <div class="container">
+        <div class="row justify-content-start futures-version-2">
+            <div class="col-md-4">
+                <div class="futures-version-2-box">
+                    <i class="bredhicon-download-cloud"></i>
+                    <h5>极速安全</h5>
+                    <p>支持Windows/Linux 全线SSD硬盘极速体验</p>
+                    <div class="text-right">
+                        <a class="more-btn" href="#">read more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="futures-version-2-box">
+                    <span class="free-badge"><b></b>free</span>
+                    <i class="bredhicon-share"></i>
+                    <h5>专业稳定</h5>
+                    <p>具有良好的口碑和售后范围以及优质的产品</p>
+                    <div class="text-right">
+                        <a class="more-btn" href="#">read more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="futures-version-2-box">
+                    <i class="bredhicon-mic"></i>
+                    <h5>无缝售后</h5>
+                    <p>7*24小时无缝售后体验,随时为你保驾护航</p>
+                    <div class="text-right">
+                        <a class="more-btn" href="#">read more</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<section class="section-wth-amwaj">
+    <div class="bg_overlay_section-amwaj">
+        <img src="img/bg/b_bg_02.jpg" alt="img-bg">
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-between mr-tp-50">
+
+            <div class="col-md-6 side-text-right-container">
+                <h2 class="side-text-right-title">我们与您一起 ,<br> 打造良好的上云体验</h2>
+                <p class="side-text-right-text">
+                    不管您是 <b>新人站长</b> 还是有着丰富经验的 <b>大佬</b> , 我们都将是您的理想解决方案. 我们强大的云服务产品不仅可以帮助您实现整体网站目标，还将是您 <a href="#">可靠</a> 、 <a href="#">牢固</a> 的合作伙伴.
+                    <br>
+                    <br> 我们是最容易使用的云计算平台之一，并一直致力于为我们的客户提供市场上最好的云计算服务.
+                <p>
+                    <a class="side-text-right-button" href="#">现在开始!</a>
+            </div>
+
+            <div class="col-md-5">
+
+                <div class="display-on-hover-box-container">
+                    <a href="#tab1" class="display-on-hover-box-items">
+                        <img src="img/svgs/hover-box/quality-badge.svg" alt="" />
+                    </a>
+                    <a href="#tab2" class="display-on-hover-box-items">
+                        <img src="img/svgs/hover-box/inclined-rocket.svg" alt="" />
+                    </a>
+                    <a href="#tab3" class="display-on-hover-box-items">
+                        <img src="img/svgs/hover-box/public-speech.svg" alt="" />
+                    </a>
+                    <a href="#tab4" class="display-on-hover-box-items">
+                        <img src="img/svgs/hover-box/big-light.svg" alt="" />
+                    </a>
+                    <a href="#tab5" class="display-on-hover-box-items">
+                        <img src="img/svgs/hover-box/big-lifesaver.svg" alt="" />
+                    </a>
+                    <a href="#tab6" class="display-on-hover-box-items">
+                        <img src="img/svgs/hover-box/headphones-with-thin-mic.svg" alt="" />
+                    </a>
+                    <a href="#tab7" class="display-on-hover-box-items">
+                        <img src="img/svgs/hover-box/inclined-paper-plane.svg" alt="" />
+                    </a>
+                    <a href="#tab8" class="display-on-hover-box-items">
+                        <img src="img/svgs/hover-box/big-telephone.svg" alt="" />
+                    </a>
+
+                    <div class="display-on-hover-box-content">
+                        <div class="display-on-hover-box-cotent-items">
+                            <div id="tab1" class="tab-content-hover">
+                                <h5>Shared Housing</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet elit. Lorem ipsum dolor sit amet</p>
+                            </div>
+                            <div id="tab2" class="tab-content-hover">
+                                <h5>Dedicated Housing</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet elit. Lorem ipsum dolor sit amet</p>
+                            </div>
+                            <div id="tab3" class="tab-content-hover">
+                                <h5>Cloud Hosting</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet elit. Lorem ipsum dolor sit amet</p>
+                            </div>
+                            <div id="tab4" class="tab-content-hover">
+                                <h5>Domains</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet elit. Lorem ipsum dolor sit amet</p>
+                            </div>
+                            <div id="tab5" class="tab-content-hover">
+                                <h5>VPS Servers</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet elit. Lorem ipsum dolor sit amet</p>
+                            </div>
+                            <div id="tab6" class="tab-content-hover">
+                                <h5>Cloud VPS</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet elit. Lorem ipsum dolor sit amet</p>
+                            </div>
+                            <div id="tab7" class="tab-content-hover">
+                                <h5>Reseller Services</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet elit. Lorem ipsum dolor sit amet</p>
+                            </div>
+                            <div id="tab8" class="tab-content-hover">
+                                <h5>WordPress Hosting</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet elit. Lorem ipsum dolor sit amet</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section>
+
+<section class="padding-60-0-100">
+    <div class="container">
+        <h5 class="title-default-coodiv-two">简单而强大的客户中心</h5>
+        <div class="row justify-content-center mr-tp-40">
+            <div class="col-md-3">
+                <div class="box-features-one">
+                    <i class="e-flaticon-002-plug"></i>
+                    <h5>中文化管理面板</h5>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="box-features-one">
+                    <i class="e-flaticon-025-router"></i>
+                    <h5>企业级虚拟化架构</h5>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="box-features-one">
+                    <i class="e-flaticon-043-remote-control"></i>
+                    <h5>DDOS防护</h5>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="box-features-one">
+                    <i class="e-flaticon-021-virtual-reality"></i>
+                    <h5>CN2回程优化</h5>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row justify-content-center mr-tp-10">
+            <div class="col-md-3">
+                <div class="box-features-one">
+                    <i class="e-flaticon-004-battery"></i>
+                    <h5>企业级SSD硬盘阵列</h5>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="box-features-one">
+                    <i class="e-flaticon-032-sata"></i>
+                    <h5>独立VPS控制面板</h5>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="box-features-one">
+                    <i class="e-flaticon-036-air-conditioner"></i>
+                    <h5>有限的技术支持</h5>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="box-features-one">
+                    <i class="e-flaticon-049-speaker"></i>
+                    <h5>世界顶级KVM架构</h5>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="padding-100-0 gray-bg">
+    <div class="container">
+        <h5 class="title-default-coodiv-two">官方公告 </h5>
+        <div class="row justify-content-start blog-items-home"><!-- start row -->
+
+            <div class="col-md-4"><!-- col -->
+                <div class="home-blog-te"><!-- blog container -->
+                    <div class="post-thumbn parallax-window" style="background: url(img/blog/blog4.png) no-repeat center;"></div><!-- post thumbnail -->
+                    <div class="post-bodyn">
+                        <h5><a href="#">Up and Running With WooCommerce</a></h5><!-- post title -->
+                        <p><i class="far fa-calendar"></i>Mars 22,2019</p><!-- post date -->
+                    </div>
+                </div><!-- end blog container -->
+            </div><!-- end col -->
+
+            <div class="col-md-4"><!-- col -->
+                <div class="home-blog-te"><!-- blog container -->
+                    <div class="post-thumbn parallax-window" style="background: url(img/blog/blog3.png) no-repeat center;"></div><!-- post thumbnail -->
+                    <div class="post-bodyn">
+                        <h5><a href="#">Up and Running With WooCommerce</a></h5><!-- post title -->
+                        <p><i class="far fa-calendar"></i>Mars 22,2019</p><!-- post date -->
+                    </div>
+                </div><!-- end blog container -->
+            </div><!-- end col -->
+
+            <div class="col-md-4"><!-- col -->
+                <div class="home-blog-te"><!-- blog container -->
+                    <div class="post-thumbn parallax-window" style="background: url(img/blog/blog2.png) no-repeat center;"></div><!-- post thumbnail -->
+                    <div class="post-bodyn">
+                        <h5><a href="#">Up and Running With WooCommerce</a></h5><!-- post title -->
+                        <p><i class="far fa-calendar"></i>Mars 22,2019</p><!-- post date -->
+                    </div>
+                </div><!-- end blog container -->
+            </div><!-- end col -->
+
+        </div>
+    </div>
+</section>
+<section class="footer-section-banner">
+    <div class="container">
+        <div class="row free-trial-footer-banner">
+            <div class="col-md-8">
+                <h5 class="free-trial-footer-banner-title">现在就加入我们！</h5>
+                <p class="free-trial-footer-banner-text">心动不如行动</p>
+            </div>
+
+            <div class="col-md-4 free-trial-footer-links d-flex mx-auto flex-column">
+                <div class="mb-auto"></div>
+                <div class="mb-auto">
+                    <a class="sign-btn" href="/user/login.php">登录</a>
+                    <a class="log-btn" href="/user/reg.php">注册</a>
+                </div>
+                <div class="mt-auto"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="footer-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9 quiq-links-footer">
+                <h5 class="quiq-links-footer-title">快速导航</h5>
+                <div class="row">
+                    <ul class="col-md-6 quiq-links-footer-ul">
+                        <li><a href="#">香港CN2云服务器</a></li>
+                        <li><a href="#">美国圣何塞高防云服务器</a></li>
+                        <li><a href="#">美国CN2直连云服务器</a></li>
+                        <li><a href="#">香港PCCW虚拟主机</a></li>
+                        <li><a href="#">日本Microsoft虚拟主机</a></li>
+                        <li><a href="#">辽宁高防虚拟主机</a></li>
+                        <li><a href="#">南京云电脑</a></li>
+                        <li><a href="#">Mysql云数据库</a></li>
+                        <li><a href="#">Mssql云数据库</a></li>
+                    </ul>
+
+                    <ul class="col-md-6 quiq-links-footer-ul">
+                        <li><a href="#">联系我们</a></li>
+                        <li><a href="#">常见问题</a></li>
+                        <li><a href="#">忘记密码?</a></li>
+                        <li><a href="#">创建账号</a></li>
+                        <li><a href="#">登陆账号</a></li>
+                        <li><a href="#">有朝云百科</a></li>
+                        <li><a href="#">续费 & 结账</a></li>
+                        <li><a href="#">用户中心</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <h5 class="quiq-links-footer-title">安全认证</h5>
+                <p class="secure-img-footer-area">
+                    <img src="img/footer/secure.png" alt="" />
+                    <span>我们的网站完美通过了安全认证</span>
+                </p>
+
+                <div class="footer-contact-method">
+                    <a href="#">
+                        <span>邮件联系 :</span>
+                        <b>admin@loli.qa</b>
+                        <i class="fas fa-at"></i>
+                    </a>
+
+                    <a href="#">
+                        <span>QQ :</span>
+                        <b>3256966403</b>
+                        <i class="fab fa-qq"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mr-tp-40 row justify-content-between footer-area-under">
+            <div class="col-md-4">
+                <a href="#"><img class="footer-logo-blue" src="img/header/logo-w-f.png" alt="" /></a>
+                <div class="footer-social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-zhihu"></i></a>
+                    <a href="#"><i class="fab fa-qq"></i></a>
+                    <a href="#"><i class="fab fa-weibo"></i></a>
+                </div>
+            </div>
+
+            <div class="col-md-4 row">
+                <ul class="col-md-6 under-footer-ullist">
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">我们的服务</a></li>
+                </ul>
+                <ul class="col-md-6 under-footer-ullist text-right">
+                    <li><a href="#">隐私政策</a></li>
+                    <li><a href="#">服务条款</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="row justify-content-between final-footer-area mr-tp-40">
+            <div class="final-footer-area-text">
+                © Copyright 2020 Asakumo LLC (<i class="fas fa-code-branch"></i> 0asaprDT) All Rights Reserved.  Made with love in NZ
+            </div>
+            <!-- Modal -->
+            <div class="footer-lang-changer">
+                <div class="lang-changer-drop-up">
+                    <a class="menu-btn-changer" role="button" id="dropupmenulagchanger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#"><i class="fas fa-globe-asia"></i> Chinese</a>
+                    <div class="dropdown-menu dropupmenulagchanger" aria-labelledby="dropupmenulagchanger">
+                        <a class="dropdown-item" href="index.html">Chinese</a>
+                        <a class="dropdown-item" href="./en">English</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- jquery -->
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<!-- bootstrap JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+<!-- template JavaScript -->
+<script src="js/template-scripts.js"></script>
+<!-- flickity JavaScript -->
+<script src="js/flickity.pkgd.min.js"></script>
+<!-- carousel JavaScript -->
+<script src="owlcarousel/owl.carousel.min.js"></script>
+<!-- parallax JavaScript -->
+<script src="js/parallax.min.js"></script>
+<!-- mailchamp JavaScript -->
+<script src="js/mailchamp.js"></script>
+<!-- bootstrap offcanvas -->
+<script src="js/bootstrap.offcanvas.min.js"></script>
+<!-- touchSwipe JavaScript -->
+<script src="js/jquery.touchSwipe.min.js"></script>
+<!-- seconde style additionel JavaScript -->
+<script src="js/particles-code.js"></script>
+<script src="js/particles.js"></script>
+<script src="js/smoothscroll.js"></script>
+<!-- video background JavaScript -->
+<script src="js/video-bg.js"></script>
+</body>
+
+</html>
